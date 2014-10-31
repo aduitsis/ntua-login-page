@@ -1,6 +1,6 @@
 <!--
 <% response.addHeader("X-FRAME-OPTIONS", "DENY"); %>
-<%@ page contentType="text/html;charset=iso8859-7" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib uri="urn:mace:shibboleth:2.0:idp:ui" prefix="idpui" %>
 
 <%@ page import="edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper" %>
