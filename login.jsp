@@ -21,7 +21,8 @@
 	
 	<title>ΕΜΠ - Υπηρεσία Ταυτοποίησης</title>
 	
-	<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/login.css">
+	<!-- <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/login.css"> -->
+	<link rel="stylesheet" type="text/css" href="login.css">
 	
 	<meta name="viewport" content="user-scalable=no, width=device-width">
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -53,7 +54,7 @@
 			</p>
 			<% if (loginContext == null) { 	%>
 				<div class="warning">
-					<div class="warning_sign">⚠</div>
+					<div class="warning_sign"><img class="warning_icon" src="warning.svg"/></div>
 					<p class="content">
 						<b>Προσοχή:</b> Είναι πολύ πιθανό να φτάσατε εδώ πιέζοντας το πλήκτρο "back" στον φυλλομετρητή σας 
 						ή από το ιστορικό του φυλλομετρητή σας ή μέσω κάποιου bookmark που είχατε φυλάξει.Δυστυχώς όμως η απευθείας επίσκεψη 
@@ -81,7 +82,7 @@
 					</div>
 					<% if ("true".equals(request.getAttribute("loginFailed"))) { %>
 					<div class="warning">
-						<div class="warning_sign">⚠</div>
+						<div class="warning_sign"><img class="warning_icon" src="warning.svg"/></div>
 						<p class="content"><b>H ταυτοποίηση απέτυχε.</b> Παρακαλούμε πολύ δοκιμάστε ξανά προσέχοντας να πληκτρολογήσετε σωστά το όνομα χρήστη και το συνθηματικό σας. Δείτε αν τυχόν έχετε πατήσει το πλήκτρο Caps Lock και προσέξτε την γλώσσα που έχετε στο πληκτρολόγιο.</p>
 					</div>
 					<% } %>
