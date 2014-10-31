@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 <% response.addHeader("X-FRAME-OPTIONS", "DENY"); %>
 <%@ page contentType="text/html;charset=iso8859-7" %>
 <%@ taglib uri="urn:mace:shibboleth:2.0:idp:ui" prefix="idpui" %>
