@@ -1,0 +1,398 @@
+.page {
+        background:#fff url(https://login.ntua.gr/idp/images/bg-grad.png);
+}
+@media screen and (max-width: 700px) {
+	.page {
+		padding: 0px;
+		margin: 0px;
+	}
+}
+
+
+.container {
+	padding-top: 1em;
+}
+@media screen and (max-width: 700px) {
+	.container {
+		padding: 0px;
+		margin: 0px;
+	}
+}
+
+.ntua_image {
+	width: 55px;
+	max-height: 3.5em;
+	float: left;
+	margin-left: 3%;
+	//margin-top: 5px;
+	//border:1px solid red;
+
+}
+
+.noc_image {
+	width: 51px; 
+
+	float: right;
+//	-moz-box-shadow: 2px 2px 2px #000;
+//	-webkit-box-shadow: 2px 2px 2px #000;
+//	box-shadow: 5px 5px 5px #000; 
+	margin-right: 2%;
+	margin-top: 2px;
+	padding: 0%;
+	//border:1px solid red;
+}
+
+.title {
+	//clear: both;
+	display: block;
+	width: 100%;
+	text-align:center;
+	//align: center;
+	font-family: candara, helvetica, "Trebuchet MS";
+	font-size: 250%;
+	font-style: italic;
+	font-weight: bold;
+	color: white;
+	text-shadow: #222222 2px 2px 8px;
+	margin-left: 0%;
+	padding: 0% 0% 0% 0%;
+	//border:1px solid red;
+}
+		
+.title_yellow {
+	display: inline;
+	color: orange;
+}
+
+.header {
+	border-top-left-radius: 0.5em;
+	border-top-right-radius: 0.5em;
+	width: 80%;
+    height: 60px;
+	max-height: 60px;
+    margin: 0px auto auto auto;
+    padding: 14px 0px 7px 0px;
+	background: #3311ff;
+	background: linear-gradient(135deg, #5674c7 28%,#384f85 58%); /* W3C */
+	filter:progid:DXImageTransform.Microsoft.Gradient(endColorstr='#384F85', startColorstr='#5674C7'); /* for IE */
+	background: -webkit-gradient(
+				linear,
+				left bottom,
+				left top,
+				color-stop(0.42, rgb(56,79,133)),
+				color-stop(0.72, rgb(86,116,199))
+			);
+	background: -moz-linear-gradient(
+				93deg,
+				rgb(56,79,133) 42%,
+				rgb(86,116,199) 72%
+			);
+	/* IE10 */ 
+	background-image: -ms-linear-gradient(bottom, #384F85 42%, #5674C7 72%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(bottom, #384F85 42%, #5674C7 72%);
+
+	/* Proposed W3C Markup */ 
+	background-image: linear-gradient(bottom, #384F85 42%, #5674C7 72%);
+	//border:1px solid red;
+
+}
+@media screen and (max-width: 700px) {
+	.header {
+		width: 100%;
+		padding: 0px 0px 0px 0px;
+		border-top-left-radius: 0em;
+		border-top-right-radius: 0em;
+	}
+}
+
+.username, .password , .entry {
+	width: 60%;
+	display: block;
+	margin-left: auto;
+	margin-right: 25%;
+	margin-bottom: 8px;
+	text-align: left;
+	//border:1px solid red;
+}
+@media screen and (max-width: 700px) {
+	.username, .password , .entry {
+		align: center;
+		width: 94%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0px;
+	}
+
+	.entry {
+		padding: 4% 0px 0px 0px;
+	}
+}
+
+.inputfields:focus {
+	//-moz-box-shadow: 0 0 1px 1px #aaa;
+	//-webkit-box-shadow: 0 0 1px 1px#aaa;
+	box-shadow: 0 1px 3px rgba(0,139,139,0.1) inset, 0 0 8px rgba(0,139,139,0.5) ;
+	border-color: DarkCyan;
+}
+
+.fields {
+	//border:1px solid green;
+}
+
+.footer {
+        width: 700px;
+        height: 20px;
+        margin: 0px auto auto auto;
+        padding: 0;
+}
+@media screen and (max-width: 700px) {
+	.footer {
+		width: 100%;
+	}
+}
+
+.box {
+		width:   80%;
+        border-top:    1px solid white;
+        border-right:  1px solid #787878;
+        border-bottom: 1px solid #787878;
+        border-left:   1px solid #aeaeae;
+        margin:  0px auto auto auto;
+        padding: 0px;
+        background: white url('https://login.ntua.gr/idp/images/pyrforos.png');
+        background-repeat: no-repeat;
+        background-position: 155% -10%;
+
+}
+@media screen and (max-width: 700px) {
+	.box {
+		width: 100%;
+		background: white;
+		padding: 0px;
+		margin 0px auto auto auto;
+	}
+}
+
+		
+.content, .content_bigger {
+        font-family: Calibri, "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+        text-align: justify;
+
+		
+}
+
+.content_bigger {
+		font-size: 14px;
+		color: black;
+		padding: 3px 5px 12px 5px;
+}
+
+@media screen and (max-width: 700px) {
+        .content_bigger {
+		display: none;
+        }
+}
+
+.content {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-size: 15px;
+        color: #383838;
+}
+.content a {
+        margin: 0;
+        padding: 0;
+}
+
+.content b {
+        font-family: "Calibri Bold", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+}
+
+p.content {
+        margin-bottom: 15px;
+}
+
+.content-small {
+        margin: 10px;
+        font-family: Calibri, "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        text-align: justify;
+        color: #383838;
+}
+
+.note {
+		background-color: #FFFFD0;
+		margin: 15px;
+		border-top: 1px solid #FCBE0B;
+		border-bottom: 1px dashed #FCBE0B;
+		border-left: 1px dashed #FCBE0B;
+		border-right: 1px dashed #FCBE0B;
+
+		padding: 5px 0px 2px 0px;
+}
+
+.warning {
+		border-radius: 4px;
+		margin: 10px;
+        font-family: Calibri, "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+		background-color: #FFC2C2;
+		border: 2px dashed red;
+		padding: 6px;
+}
+
+.warning_sign {
+		color: red;
+		font-size: 60px;
+		margin-left: 10px;
+		margin-right: 20px;
+		float: left;
+}
+
+.warning_sign_small {
+		color: red;
+		font-size: 30px;
+		margin-left: 5px;
+		margin-right: 10px;
+		float: left;
+}	
+
+.content-small a {
+        margin: 0;
+        padding: 0;
+}
+
+@media screen and (max-width: 700px) {
+	.note {	
+		display: none;
+	}
+}
+
+.login {
+        width:73%;
+        margin: 20px auto 20px auto;
+        padding:6px 8px 6px 8px;
+        border: 1px dotted #787878;
+/*      background-color:#fafafa; */
+        background:transparent url(https://login.ntua.gr/idp/images/bg-trans.png);
+		
+}
+@media screen and (max-width: 700px) {
+        .login {
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		border: none;	
+        }
+}
+
+.message {
+        font-family: Calibri, "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+}
+
+.label {
+    font-family: Calibri, "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+	padding-top: 3px;
+	padding-right: 3px;
+	//border:1px solid blue;
+	display: block;
+	width: 70%;
+	margin-right: 15%;
+	margin-left: 15%;
+}
+@media screen and (max-width: 700px) {
+        .label {
+		font-size: 15px;
+		//text-align: left;
+		padding-top: 3px;
+		padding-right: 0px;
+		padding-left: 0px;
+		display: block;
+		width: 100%;
+		float: none;
+		//border:1px solid blue;
+		margin-top: 2%;
+		margin-right: 0%;
+		margin-left: 0%;
+		margin-bottom: 0%;
+        }
+}
+
+input {
+    width: 98%;
+    padding: 3pt 3pt 3pt 3pt;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+    font-family: Calibri, "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+	display: block;
+	//border:1px solid blue;
+	border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+}
+@media screen and (max-width: 700px) {
+	input {
+		width: 98%;
+		font-size: 24px;
+		margin-top: 0%;
+		margin-bottom: 2%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+.submitbutton {
+	width: 60%;
+	display: block;
+	margin-top: 6%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+@media screen and (max-width: 700px) {
+	.submitbutton {
+		width: 100%;
+		height: 1.8em;
+		margin: 0px;
+		font-size: 20px;
+		font-weight: bold;
+		margin: 3% 0% 3% 0%;
+		padding: 0px;
+	}
+}
+
+.footer-content {
+        font-family: Calibri, "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        padding: 2px 5px 0 5px;
+        color: #383838;
+}
+
+.footer-content a {
+        margin: 0;
+        padding: 0;
+}
+
+a, a:visited {text-decoration:none; color:#33c;}
+a:hover {text-decoration:underline; color:#f22;}
+
+@media screen and (max-width: 700px) {
+
+.ntua_image {
+	display: none;
+}
+
+.noc_image {
+	display: none;
+}
+
+}
+
