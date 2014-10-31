@@ -21,8 +21,7 @@
 	
 	<title>ΕΜΠ - Υπηρεσία Ταυτοποίησης</title>
 	
-	<!-- <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/login.css"> -->
-	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/login.css"> 
 	
 	<meta name="viewport" content="user-scalable=no, width=device-width">
 	<meta name="apple-mobile-web-app-capable" content="yes">
