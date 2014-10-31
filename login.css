@@ -240,7 +240,7 @@ p.content {
 .warning {
 		border-radius: 4px;
 		margin: 10px;
-        font-family: Calibri, "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+		font-family: Calibri, "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
 		background-color: #FFC2C2;
 		border: 2px dashed red;
 		padding: 6px;
@@ -253,6 +253,14 @@ p.content {
 		margin-right: 20px;
 		float: left;
 }
+
+.warning_icon {
+	width: 65px;
+	max-height: 3.5em;
+	margin-top: 17px;
+
+}
+		
 
 .warning_sign_small {
 		color: red;
