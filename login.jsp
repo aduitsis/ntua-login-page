@@ -21,7 +21,7 @@
 	
 	<title>ΕΜΠ - Υπηρεσία Ταυτοποίησης</title>
 	
-	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/login.css">
 	
 	<meta name="viewport" content="user-scalable=no, width=device-width">
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -35,8 +35,8 @@
 
 		<div class="header">
 			
-			<img class="ntua_image" src="pyrforos_big_simplified.svg"/>
-			<img class="noc_image" src="noc.svg"/>
+			<img class="ntua_image" src="<%= request.getContextPath() %>/pyrforos_big_simplified.svg"/>
+			<img class="noc_image" src="<%= request.getContextPath() %>/noc.svg"/>
 			
 			<div class="title">
 				<span class="title_yellow">login</span>.ntua.gr
@@ -67,9 +67,13 @@
 			<div class="login">
 
 				<!--- action below is the login server URI --->
-			
-				<form id="login_form" action="https://login.ntua.gr/idp/j_security_check" method="post" autocomplete="off">
-				
+				<% if(request.getAttribute("actionUrl") != null){ %>
+					<form id="login_form" action="<%=request.getAttribute("actionUrl")%>" method="post" autocomplete="off">
+				<% } 
+				else {  
+				%> 
+					<form action="j_security_check" method="post" autocomplete="off">
+				<% } %>
 					<div class="content_bigger">
 					Έχετε ζητήσει να συνδεθείτε σε υπηρεσία που απαιτεί την ταυτοποίησή
 					σας ως έγκυρο χρήστη του ΕΜΠ. Παρακαλούμε εισαγάγετε τα στοιχεία του
