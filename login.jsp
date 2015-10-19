@@ -75,14 +75,14 @@
 					<form action="j_security_check" method="post" autocomplete="off">
 				<% } %>
 					<div class="content_bigger">
-					Έχετε ζητήσει να συνδεθείτε σε υπηρεσία που απαιτεί την ταυτοποίησή
+					<!--Έχετε ζητήσει να συνδεθείτε σε υπηρεσία που απαιτεί την ταυτοποίησή
 					σας ως έγκυρο χρήστη του ΕΜΠ. Παρακαλούμε εισαγάγετε τα στοιχεία του
-					κωδικού που σας έχει δοθεί από τις κεντρικές υπηρεσίες του ιδρύματος.
+					κωδικού που σας έχει δοθεί από τις κεντρικές υπηρεσίες του ιδρύματος.-->
 					</div>
 					<% if ("true".equals(request.getAttribute("loginFailed"))) { %>
 					<div class="warning">
 						<div class="warning_sign"><img class="warning_icon" src="<%= request.getContextPath() %>/warning.svg"/></div>
-						<p class="content"><b>H ταυτοποίηση απέτυχε.</b> Παρακαλούμε πολύ δοκιμάστε ξανά προσέχοντας να πληκτρολογήσετε σωστά το όνομα χρήστη και το συνθηματικό σας. Δείτε αν τυχόν έχετε πατήσει το πλήκτρο Caps Lock και προσέξτε την γλώσσα που έχετε στο πληκτρολόγιο.</p>
+						<p class="content"><b>H ταυτοποίηση απέτυχε.</b> <!--Παρακαλούμε πολύ δοκιμάστε ξανά προσέχοντας να πληκτρολογήσετε σωστά το όνομα χρήστη και το συνθηματικό σας. Δείτε αν τυχόν έχετε πατήσει το πλήκτρο Caps Lock και προσέξτε την γλώσσα που έχετε στο πληκτρολόγιο.--> Πληκτρολογήστε ξανά τα στοιχεία σας προσέχοντας τη γλώσσα πληκτρολογίου και την επιλογή κεφαλαίων ή πεζών.</p>
 					</div>
 					<% } %>
 					<div class="fields">
@@ -94,7 +94,7 @@
 							<span>Password</span>
 							<input type="password" name="j_password" id="j_password" size="24" class="inputfields">
 						</label>
-						<input class="submitbutton" value="Είσοδος &raquo;" type="submit" name="submit"/>
+						<input class="submitbutton" value="Είσοδος" type="submit" name="submit"/>
 	
 					</div>
 				</form>
@@ -124,7 +124,7 @@
 		<div class="footer">
 
 			<div class="footer-content">
-			© 2014 Εθνικό Μετσόβιο Πολυτεχνείο &#8226; Ανάπτυξη &amp; λειτουργία: <a target="_blank" href="http://www.noc.ntua.gr/">Κέντρο Δικτύων ΕΜΠ</a>
+			© 2015 Εθνικό Μετσόβιο Πολυτεχνείο &#8226; Ανάπτυξη &amp; λειτουργία: <a target="_blank" href="http://www.noc.ntua.gr/">Κέντρο Δικτύων ΕΜΠ</a>
 
 			</div>
 
