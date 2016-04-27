@@ -69,7 +69,8 @@
 .header {
 	border-top-left-radius: 0.5em;
 	border-top-right-radius: 0.5em;
-	width: 80%;
+	min-width:600px;
+	width: 50%;
     height: 60px;
 	max-height: 60px;
     margin: 0px auto auto auto;
@@ -157,7 +158,8 @@
 }
 
 .box {
-		width:   80%;
+		min-width:600px;
+		width:   50%;
         border-top:    1px solid white;
         border-right:  1px solid #787878;
         border-bottom: 1px solid #787878;
@@ -203,7 +205,7 @@
         margin-right: 15px;
         margin-top: 15px;
         margin-bottom: 5px;
-        font-size: 15px;
+        font-size: 14px;
         color: #383838;
 }
 .content a {
@@ -250,16 +252,16 @@ p.content {
 
 .warning_sign {
 		color: red;
-		font-size: 60px;
+		font-size: 20px;
 		margin-left: 10px;
 		margin-right: 20px;
 		float: left;
 }
 
 .warning_icon {
-	width: 65px;
-	max-height: 3.5em;
-	margin-top: 17px;
+	width: 45px;
+	max-height: 2.5em;
+	margin-top: 12px;
 
 }
 		
@@ -284,7 +286,8 @@ p.content {
 }
 
 .login {
-        width:73%;
+		min-width:450px;
+        width:53%;
         margin: 20px auto 20px auto;
         padding:6px 8px 6px 8px;
         border: 1px dotted #787878;
@@ -294,8 +297,9 @@ p.content {
 }
 @media screen and (max-width: 700px) {
         .login {
-		width: 100%;
-		margin: 0px;
+		min-width:300px;
+		width: 90%;
+		margin: auto;
 		padding: 0px;
 		border: none;	
         }
@@ -314,8 +318,7 @@ p.content {
 	//border:1px solid blue;
 	display: block;
 	width: 70%;
-	margin-right: 15%;
-	margin-left: 15%;
+	margin: auto;
 }
 @media screen and (max-width: 700px) {
         .label {
@@ -338,10 +341,7 @@ p.content {
 input {
     width: 98%;
     padding: 3pt 3pt 3pt 3pt;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	margin-left: 1%;
-	margin-right: 1%;
+	margin: 1% auto 1% auto;
     font-family: Calibri, "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
     font-size: 20px;
 	display: block;
@@ -361,20 +361,23 @@ input {
 }
 
 .submitbutton {
-	width: 60%;
+	width: 150px;
 	display: block;
-	margin-top: 6%;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin: 6% auto 6% auto;
+	font-size: 15px;
+    cursor:pointer;
+}
+.submitbutton:hover {
+	box-shadow: 0 1px 3px rgba(0,139,139,0.1) inset, 0 0 8px rgba(0,139,139,0.5) ;
+	border-color: #86b8ef;
 }
 @media screen and (max-width: 700px) {
 	.submitbutton {
-		width: 100%;
+		width: 150px;
 		height: 1.8em;
 		margin: 0px;
-		font-size: 20px;
-		font-weight: bold;
-		margin: 3% 0% 3% 0%;
+		font-size: 15px;
+		margin: 3% auto 3% auto;
 		padding: 0px;
 	}
 }
