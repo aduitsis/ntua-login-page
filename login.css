@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:700italic);
+
 .page {
         background:#fff url(https://login.ntua.gr/idp/images/bg-grad.png);
 }
@@ -48,7 +50,7 @@
 	width: 100%;
 	text-align:center;
 	//align: center;
-	font-family: candara, helvetica, "Trebuchet MS";
+	font-family: candara, 'Lato', helvetica, "Trebuchet MS";
 	font-size: 250%;
 	font-style: italic;
 	font-weight: bold;
